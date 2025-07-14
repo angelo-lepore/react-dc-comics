@@ -6,8 +6,8 @@
     padding: 0;
 }
 
-html, body {
-    font-family: 'Open Sans', sans-serif;
+:root {
+    font-family: "Open Sans", sans-serif;
 }
 
 /* header */
@@ -20,7 +20,7 @@ header li {
 }
 
 header li:hover {
-    color: aqua;
+    color: #0af;
 }
 
 .navbar {
@@ -65,3 +65,84 @@ header li:hover {
 }
 
 /* footer */
+
+.container-shop {
+    background-image: url("./img/footer-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+}
+
+.container-shop h4 {
+    color: white;
+    padding: 20px 0px 30px 0px;
+}
+
+.container-shop li {
+    color: white;
+    opacity: 0.5;
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container-shop li:hover {
+    color: white;
+    opacity: 1;
+}
+
+.container-social {
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+    padding: 1.5rem;
+}
+
+.signup-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #0af;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color: #0af;
+    color: black;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.social span {
+    font-weight: bold;
+    color: #0af;
+    text-transform: uppercase;
+}
+
+.social a {
+    display: inline-block;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.social img:hover {
+    transform: scale(1.2);
+}

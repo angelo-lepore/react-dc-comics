@@ -17,7 +17,7 @@ export default function Footer() {
                     <li key={id}>
                       <a
                         href={href}
-                        className="text-white text-decoration-none d-block py-1"
+                        className="footer-link text-decoration-none d-block py-1"
                       >
                         {name}
                       </a>
@@ -30,7 +30,7 @@ export default function Footer() {
                     <li key={id}>
                       <a
                         href={href}
-                        className="text-white text-decoration-none d-block py-1"
+                        className="footer-link text-decoration-none d-block py-1"
                       >
                         {name}
                       </a>
@@ -45,7 +45,7 @@ export default function Footer() {
                     <li key={id}>
                       <a
                         href={href}
-                        className="text-white text-decoration-none d-block py-1"
+                        className="footer-link text-decoration-none d-block py-1"
                       >
                         {name}
                       </a>
@@ -60,7 +60,7 @@ export default function Footer() {
                     <li key={id}>
                       <a
                         href={href}
-                        className="text-white text-decoration-none d-block py-1"
+                        className="footer-link text-decoration-none d-block py-1"
                       >
                         {name}
                       </a>

@@ -84,6 +84,14 @@ main {
     color: white;
 }
 
+.footer-link {
+    color: grey;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+}
+
 .img-zoom-crop {
     width: 100%;
     object-fit: cover;

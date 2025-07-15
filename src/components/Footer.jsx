@@ -1,71 +1,97 @@
-export default function Footer(){
-    return (
-        <footer>
-            <div className="container-shop">
-                <div>
-                    <div>
-                        <h4>DC COMICS</h4>
-                        <ul>
-                            <li><a>Characters</a></li>
-                            <li><a>Comics</a></li>
-                            <li><a>Movies</a></li>
-                            <li><a>TV</a></li>
-                            <li><a>Games</a></li>
-                            <li><a>Videos</a></li>
-                            <li><a>News</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4>SHOP</h4>
-                        <ul>
-                            <li><a>Shop DC</a></li>
-                            <li><a>Shop DC Collectibles</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <h4>DC</h4>
-                    <ul>
-                        <li><a>Terms Of Use</a></li>
-                        <li><a>Privacy policy (New)</a></li>
-                        <li><a>Ad Choices</a></li>
-                        <li><a>Advertising</a></li>
-                        <li><a>Jobs</a></li>
-                        <li><a>Subscriptions</a></li>
-                        <li><a>Talent Workshops</a></li>
-                        <li><a>CPSC Certificates</a></li>
-                        <li><a>Ratings</a></li>
-                        <li><a>Shop Help</a></li>
-                        <li><a>Contact Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4>SITES</h4>
-                    <ul>
-                        <li><a>DC</a></li>
-                        <li><a>MAD Magazine</a></li>
-                        <li><a>DC Kids</a></li>
-                        <li><a>DC Universe</a></li>
-                        <li><a>DC Power Visa</a></li>
-                    </ul>
-                </div>
-                <div className="container-logo">
-                    <img src="/img/dc-logo-bg.png"/>
-                </div>
+import dcComics from "../db/dcComics";
+import dc from "../db/dc";
+import shop from "../db/shop";
+import sites from "../db/sites";
+
+export default function Footer() {
+  return (
+    <footer className="footer-bg">
+      <div className="container">
+        <div className="row justify-content-between align-items-start">
+          <div className="col-12 col-lg-8">
+            <div className="row">
+              <div className="col-6 col-md-4 mb-4 p-4">
+                <h5 className="fw-bold">DC COMICS</h5>
+                <ul className="list-unstyled">
+                  {dcComics.map(({ id, href, name }) => (
+                    <li key={id}>
+                      <a
+                        href={href}
+                        className="text-white text-decoration-none d-block py-1"
+                      >
+                        {name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <h5 className="fw-bold mt-4">SHOP</h5>
+                <ul className="list-unstyled">
+                  {shop.map(({ id, href, name }) => (
+                    <li key={id}>
+                      <a
+                        href={href}
+                        className="text-white text-decoration-none d-block py-1"
+                      >
+                        {name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="col-6 col-md-4 mb-4 p-4">
+                <h5 className="fw-bold">DC</h5>
+                <ul className="list-unstyled">
+                  {dc.map(({ id, href, name }) => (
+                    <li key={id}>
+                      <a
+                        href={href}
+                        className="text-white text-decoration-none d-block py-1"
+                      >
+                        {name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="col-6 col-md-4 mb-4 p-4">
+                <h5 className="fw-bold">SITES</h5>
+                <ul className="list-unstyled">
+                  {sites.map(({ id, href, name }) => (
+                    <li key={id}>
+                      <a
+                        href={href}
+                        className="text-white text-decoration-none d-block py-1"
+                      >
+                        {name}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <div className="container-social">
-                <div>
-                    <button className="signup-btn">SIGN-UP NOW!</button>
-                </div>
-                <div className="social">
-                    <span>FOLLOW US</span>
-                    <img src="/img/footer-facebook.png" alt="Facebook" />
-                    <img src="/img/footer-twitter.png" alt="Twitter" />
-                    <img src="/img/footer-youtube.png" alt="YouTube" />
-                    <img src="/img/footer-pinterest.png" alt="Pinterest" />
-                    <img src="/img/footer-periscope.png" alt="Periscope" />
-                </div>
-            </div>
-        </footer>
-    )
+          </div>
+          <div className="col-12 col-lg-4 text-center mt-4 mt-lg-0">
+            <img
+              src="/img/dc-logo-bg.png"
+              alt="DC Logo"
+              className="img-zoom-crop"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="container-social">
+        <div>
+          <button className="signup-btn">SIGN-UP NOW!</button>
+        </div>
+        <div className="social">
+          <span>FOLLOW US</span>
+          <img src="/img/footer-facebook.png" alt="Facebook" />
+          <img src="/img/footer-twitter.png" alt="Twitter" />
+          <img src="/img/footer-youtube.png" alt="YouTube" />
+          <img src="/img/footer-pinterest.png" alt="Pinterest" />
+          <img src="/img/footer-periscope.png" alt="Periscope" />
+        </div>
+      </div>
+    </footer>
+  );
 }

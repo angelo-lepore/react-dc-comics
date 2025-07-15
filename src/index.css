@@ -12,42 +12,48 @@
 
 /* header */
 
-header li {
-    display: inline-block;
-    margin-right: 20px;
-    color: gray;
-    cursor: pointer;
+.nav-link {
+    color: #333333 !important;
+    transition: color 0.3s ease;
 }
 
-header li:hover {
-    color: #0af;
-}
-
-.navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15rem;
-    padding: 1rem;
+.nav-link:hover {
+    color: #0082F9 !important;
 }
 
 /* main */
 
-.container {
-    padding: 70px;
+.jumbotron {
+    background-image: url("./img/jumbotron.jpg");
+    background-size: cover;
+    min-height: 310px;
+}
+
+main {
+    .card-img-top {
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    }
+    .card-body {
+
+        h6 {
+            font-size: 10px;
+        }
+    }
+    h6 {
+        text-transform: uppercase;
+    }
     background-color: black;
-    color: white;
 }
 
-.text {
-    text-align: center;
-    font-size: 2rem;
-}
-
-.market-container {
-    display: flex;
-    justify-content: center;
-    background-color: #0082F9;
+.card-img-top {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .market {
@@ -64,33 +70,25 @@ header li:hover {
     height: auto;
 }
 
+.market-title {
+    font-size: 1rem;
+}
+
 /* footer */
 
-.container-shop {
+.footer-bg {
     background-image: url("./img/footer-bg.jpg");
     background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 150px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
-.container-shop h4 {
-    color: white;
-    padding: 20px 0px 30px 0px;
-}
-
-.container-shop li {
-    color: white;
-    opacity: 0.5;
-    list-style-type: none;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-.container-shop li:hover {
-    color: white;
-    opacity: 1;
+.img-zoom-crop {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    display: block;
 }
 
 .container-social {
@@ -106,7 +104,7 @@ header li:hover {
     background-color: transparent;
     color: white;
     border: 2px solid #0af;
-    padding: 10px 20px;
+    padding: 5px 10px;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
@@ -145,4 +143,24 @@ header li:hover {
 
 .social img:hover {
     transform: scale(1.2);
+}
+
+/* Responsive */
+
+@media (max-width: 1199px) {
+    .market-title {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .market-title {
+        font-size: 0.50rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .market-title {
+        display: none;
+    }
 }

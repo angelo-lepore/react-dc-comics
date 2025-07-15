@@ -1,23 +1,38 @@
-import Logo from './Logo'
+import Logo from "./Logo";
+import navItems from "../db/navItems";
 
-export default function Header(){
-    return (
-        <header>
-            <div className="navbar">
-                <Logo/>
-                <ul>
-                    <li><a>CHARACTERS</a></li>
-                    <li><a>COMICS</a></li>
-                    <li><a>MOVIES</a></li>
-                    <li><a>TV</a></li>
-                    <li><a>GAMES</a></li>
-                    <li><a>COLLECTIBLES</a></li>
-                    <li><a>VIDEOS</a></li>
-                    <li><a>FANS</a></li>
-                    <li><a>NEWS</a></li>
-                    <li><a>SHOP</a></li>
-                </ul>
-            </div>
-        </header>
-    )
+export default function Header() {
+  return (
+    <header>
+      <nav className="navbar navbar-expand-lg bg-white">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">
+            <Logo />
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav ms-auto">
+              {navItems.map(({ name, href }, id) => (
+                <li className="nav-item" key={id}>
+                  <a className="nav-link" href={href}>
+                    {name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
 }

@@ -1,9 +1,4 @@
-import dcComics from "../db/dcComics";
-import dc from "../db/dc";
-import shop from "../db/shop";
-import sites from "../db/sites";
-
-export default function Footer() {
+export default function Footer({ dcComics, dc, shop, sites }) {
   return (
     <footer className="footer-bg">
       <div className="container">

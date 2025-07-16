@@ -1,7 +1,4 @@
-import Logo from "./Logo";
-import navItems from "../db/navItems";
-
-export default function Header() {
+export default function Header({ navItems, Logo }) {
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-white">

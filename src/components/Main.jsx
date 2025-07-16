@@ -1,8 +1,4 @@
-import comics from "../db/comics";
-import market from "../db/market";
-import ProductCard from "./ProductCard";
-
-export default function Main() {
+export default function Main({ comics, market, ProductCard }) {
   return (
     <main>
       <div className="jumbotron"></div>

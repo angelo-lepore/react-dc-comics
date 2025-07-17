@@ -12,6 +12,7 @@ const comics = [
     type: "comic book",
     artists: ["José Luis García-López", "Clay Mann", "Rafael Albuquerque"],
     writers: ["Brad Meltzer", "Tom King", "Scott Snyder"],
+    href: "#",
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ const comics = [
     type: "comic book",
     artists: ["Rafael Albuquerque"],
     writers: ["Scott Snyder"],
+    href: "#",
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ const comics = [
     type: "graphic novel",
     artists: ["Stjepan Sejic"],
     writers: ["Dan Abnett"],
+    href: "#",
   },
   {
     id: 4,
@@ -54,6 +57,7 @@ const comics = [
     type: "comic book",
     artists: ["Rafael Albuquerque"],
     writers: ["Hope Larson"],
+    href: "#",
   },
   {
     id: 5,
@@ -68,6 +72,7 @@ const comics = [
     type: "comic book",
     artists: ["Tony S. Daniel"],
     writers: ["Tom King"],
+    href: "#",
   },
   {
     id: 6,
@@ -82,6 +87,7 @@ const comics = [
     type: "comic book",
     artists: ["Bernard Chang"],
     writers: ["Dan Jurgens"],
+    href: "#",
   },
   {
     id: 7,
@@ -96,6 +102,7 @@ const comics = [
     type: "comic book",
     artists: ["David Marquez"],
     writers: ["Joshua Williamson"],
+    href: "#",
   },
   {
     id: 8,
@@ -110,6 +117,7 @@ const comics = [
     type: "comic book",
     artists: ["Clayton Henry", "Gleb Melnikov", "Dale Eaglesham"],
     writers: ["Joshua Williamson"],
+    href: "#",
   },
   {
     id: 9,
@@ -130,6 +138,7 @@ const comics = [
       "Darko Lafuente",
     ],
     writers: ["Sam Johns", "Joshua Williamson", "John Ridley"],
+    href: "#",
   },
   {
     id: 10,
@@ -144,6 +153,7 @@ const comics = [
     type: "comic book",
     artists: ["Jason Fabok"],
     writers: ["Geoff Johns"],
+    href: "#",
   },
   {
     id: 11,
@@ -158,6 +168,7 @@ const comics = [
     type: "comic book",
     artists: ["Matteo Scalera"],
     writers: ["Katana Collins"],
+    href: "#",
   },
   {
     id: 12,
@@ -172,6 +183,7 @@ const comics = [
     type: "graphic novel",
     artists: ["Fernando Blanco", "Joëlle Jones"],
     writers: ["Joëlle Jones"],
+    href: "#",
   },
 ];
 

@@ -22,10 +22,14 @@ export default function Main({ comics, market, ProductCard }) {
       >
         {market.map((item, id) => {
           return (
-            <div className="market text-center text-white mx-3" key={id}>
+            <a
+              className="market text-center text-white mx-3 text-decoration-none"
+              key={id}
+              href={item.href}
+            >
               <img src={item.img} alt={item.title} className="mb-2 img-fluid" />
               <h5 className="market-title">{item.title}</h5>
-            </div>
+            </a>
           );
         })}
       </div>

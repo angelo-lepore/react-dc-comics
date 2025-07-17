@@ -16,6 +16,7 @@ import dcComics from "./db/dcComics";
 import dc from "./db/dc";
 import shop from "./db/shop";
 import sites from "./db/sites";
+import followUs from "./db/followUs";
 
 // Components
 import ProductCard from "./components/ProductCard";
@@ -29,7 +30,13 @@ function App() {
 
       <Main comics={comics} market={market} ProductCard={ProductCard} />
 
-      <Footer dcComics={dcComics} dc={dc} shop={shop} sites={sites} />
+      <Footer
+        dcComics={dcComics}
+        dc={dc}
+        shop={shop}
+        sites={sites}
+        followUs={followUs}
+      />
     </>
   );
 }

@@ -1,4 +1,4 @@
-export default function Footer({ dcComics, dc, shop, sites }) {
+export default function Footer({ dcComics, dc, shop, sites, followUs }) {
   return (
     <footer className="footer-bg">
       <div className="container">
@@ -80,11 +80,11 @@ export default function Footer({ dcComics, dc, shop, sites }) {
         </div>
         <div className="social">
           <span>FOLLOW US</span>
-          <img src="/img/footer-facebook.png" alt="Facebook" />
-          <img src="/img/footer-twitter.png" alt="Twitter" />
-          <img src="/img/footer-youtube.png" alt="YouTube" />
-          <img src="/img/footer-pinterest.png" alt="Pinterest" />
-          <img src="/img/footer-periscope.png" alt="Periscope" />
+          {followUs.map(({ id, src, alt, href }) => (
+            <a key={id} href={href}>
+              <img src={src} alt={alt} />
+            </a>
+          ))}
         </div>
       </div>
     </footer>
